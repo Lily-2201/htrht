@@ -1,8 +1,9 @@
-main p {
-    float: left;
+.window-left  {
+   display: flex;
+   flex-direction: row;
     text-align: left;
     font-family:cursive;
-    width: 300px;
+    padding: 15px;
     background-color: rgb(95, 34, 34);
     border-radius: 13px;
    border: rgb(54, 7, 7) ;
@@ -10,7 +11,6 @@ main p {
 img {
     width: 318px;
     border-radius: 355px;
-  float: right;
 }
 footer p{
     text-align: right;
@@ -29,7 +29,7 @@ h1{
     font-family:'Courier New', Courier, monospace;
     color: rgb(253, 179, 179);
 }
-main p{
+.window-right p{
     text-align: right;
     background-color: lightcoral;
     width: 300px;
@@ -38,10 +38,7 @@ main p{
     margin: 30px;
     font-size: 15px;
     padding: 23px;
-     font-family:cursive;
-     disply:flex;
-     justify-content:space-around;
-    
+    font-family:cursive;
 }
 
 header nav{
@@ -61,10 +58,19 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin-bottom: 20px;
 }
 a {
     text-decoration: none;
     color: black;
     font-family:cursive; 
    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;
 }
